@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Transition</title>
+	<style>
+    .box {
+      margin:20px auto;
+      width: 300px;
+      height: 300px;
+      background-color: #07f;
+      border: 1px solid #222;
+      transition: 2s ease-in ; 
+    }
+    .box:hover {
+      width:200px;
+      height:120px;		
+      background-color: #f50;
+      transform: rotate(360deg);
+    }
+	</style>
+</head>
+
+<body>
+	<div >
+        <img class="box" src="image/unnamed.jpg">
+    </div>	
+</body>
+</html>

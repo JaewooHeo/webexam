@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>Transform</title>
+    <style>
+      .origin{
+				width:152px;
+				height:100px;
+				border:1px solid black;
+				margin:100px;
+				float:left;  
+      }
+      .origin > div {
+        width:152px;
+        height:100px;
+      }
+      .rotatex {
+        transition-property: width, height;
+        transition-duration: 2s,1s;
+      }
+      .rotatex:hover {
+            width: 100px;
+            height: 300px;
+      }
+      #pers {
+        perspective:300px;  /* 원근감 추가 */    
+      }
+		</style>
+	</head>
+	<body>		
+		<h4>너굴너굴너굴너굴너굴너굴너굴너굴너굴너굴너굴너굴너굴너굴너굴너굴</h4>
+		<div class="origin">
+			<img src="image/unnamed.jpg" alt="">
+		</div>
+		<div class="origin">
+			<div class="rotatex">
+				<img src="image/unnamed.jpg" alt="">
+			</div>
+		</div>
+		<div class="origin" id="pers">
+			<div class="rotatex">
+				<img src="image/unnamed.jpg" alt="">
+			</div>
+		</div>
+	</body>
+</html>
