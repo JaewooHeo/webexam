@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+</head>
+<body>
+    <img src="image/unnamed.jpg" alt="">
+    <br>
+    <button id="open">상세설명보기</button>
+    <div id="desc" class="divDetail">
+        <h4>너구리</h4>
+        <p>사실 너구리가 아니라 라쿤이다.</p>
+        <button id="close">상세설명닫기</button>
+    </div>
+    <script>
+            document.querySelector('#desc').style.display = "none";
+            document.querySelector('#open').onclick = function () {
+                document.querySelector('#desc').style.display = "block";
+                document.querySelector('#open').style.display = "none";
+            }
+            document.querySelector('#desc').onclick = function () {
+                document.querySelector('#open').style.display = "block";
+                document.querySelector('#desc').style.display = "none";
+            }
+    </script>
+</body>
+</html>
